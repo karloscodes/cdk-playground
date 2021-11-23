@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+  
+  build:
+    commands:
+      - node --version
+      - cat .build.yml
+      - yarn install
+      - yarn build
